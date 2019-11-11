@@ -1,0 +1,8 @@
+v1.1
+- instance icon added
+- VisualStudio Code Beaufity plugin rules file added
+- scnrAmount parameter saturated in [0, 1] range
+- target view reported in console on execution
+
+v1.0
+- first release
