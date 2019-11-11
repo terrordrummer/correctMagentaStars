@@ -137,7 +137,7 @@ function parametersDialogPrototype()
    this.viewListNullCurrentView = this.viewList.currentView;
 
    this.viewList.getAll();
-   if ( parameters.targetView !== null && parameters.targetView.isView )
+   if ( parameters.targetView && parameters.targetView.isView )
    {
       this.viewList.currentView = parameters.targetView;
    }
@@ -323,10 +323,10 @@ function main()
    while ( !parameters.exit )
    {
 
-      if ( Parameters.isViewTarget && !parameters.targetView )
+      if ( Parameters.isViewTarget && !Parameters.targetView )
       {
          // A target is already defined, init it as the target view
-         parameters.targetView = this.targetView;
+         parameters.targetView = Parameters.targetView;
          parameters.getParameters();
       }
       else
